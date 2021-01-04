@@ -1,15 +1,30 @@
 #include <iostream>
 #include <vector>
-#include "1689. Partitioning Into Minimum Number Of Deci-Binary Numbers.h"
+#include "46. Permutations.h"
 
 using namespace std;
+
+
+void print(vector<vector<int>> v){
+	for(const auto& a:v){
+		for (auto b:a){
+			cout << b << '\t';
+		}
+		cout << endl;
+	}
+}
 
 int main() {
 	Solution s;
 
-	cout << s.minPartitions("32") << endl;
-	cout << s.minPartitions("82734") << endl;
-	cout << s.minPartitions("27346209830709182346") << endl;
+	vector<int> a = {1,2,3};
+	print(s.permute(a));
+	cout << endl;
+	a={0,1};
+	print(s.permute(a));
+	cout << endl;
+	a={1};
+	print(s.permute(a));
 
 	return 0;
 }
