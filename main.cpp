@@ -1,30 +1,34 @@
 #include <iostream>
 #include <vector>
-#include "46. Permutations.h"
+#include "21. Merge Two Sorted Lists.h"
 
 using namespace std;
 
+void print(ListNode *listNode) {
+	auto node = listNode;
+	while (true) {
+		cout << node->val << '\t';
 
-void print(vector<vector<int>> v){
-	for(const auto& a:v){
-		for (auto b:a){
-			cout << b << '\t';
-		}
-		cout << endl;
+		if (node->next == nullptr)
+			break;
+
+		node = node->next;
 	}
+
+	cout << endl;
 }
 
 int main() {
 	Solution s;
 
-	vector<int> a = {1,2,3};
-	print(s.permute(a));
-	cout << endl;
-	a={0,1};
-	print(s.permute(a));
-	cout << endl;
-	a={1};
-	print(s.permute(a));
+	ListNode l1(1, new ListNode(2, new ListNode(4)));
+	ListNode l2(1, new ListNode(3, new ListNode(4)));
+
+	print(&l1);
+	print(&l2);
+
+	print(s.mergeTwoLists(&l1, &l2));
+
 
 	return 0;
 }
