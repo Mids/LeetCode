@@ -1,27 +1,15 @@
 #include <iostream>
 #include <vector>
-#include "980. Unique Paths III.h"
+#include "1402. Reducing Dishes.h"
 
 using namespace std;
 
 int main() {
-	Solution s, s2, s3;
+	Solution s;
 
-	vector<vector<int>> grid = {{1, 0, 0, 0},
-								{0, 0, 0, 0},
-								{0, 0, 2, -1}};
-	vector<vector<int>> grid2 = {{1, 0, 0, 0},
-								 {0, 0, 0, 0},
-								 {0, 0, 0, 2}};
-	vector<vector<int>> grid3 = {{0, 1},
-								 {2, 0}};
-//	vector<vector<int>> grid = {{1,-1},{0,2}};
+	vector<int> grid = {-1, -8, 0, 5, -9};
 
-
-	cout << s.uniquePathsIII(grid) << endl;
-	cout << s2.uniquePathsIII(grid2) << endl;
-	cout << s3.uniquePathsIII(grid3) << endl;
-
+	cout << s.maxSatisfaction(grid) << endl;
 
 	return 0;
 }
