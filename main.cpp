@@ -1,15 +1,25 @@
 #include <iostream>
 #include <vector>
-#include "1402. Reducing Dishes.h"
+#include "44. Wildcard Matching.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> grid = {-1, -8, 0, 5, -9};
+	cout << 1 << s.isMatch("bbbab", "*??a?") << endl;
+	cout << 0 << s.isMatch("", "ab*") << endl;
+	cout << 0 << s.isMatch("aa", "a") << endl;
+	cout << 1 << s.isMatch("aa", "*") << endl;
+	cout << 0 << s.isMatch("cb", "?a") << endl;
+	cout << 1 << s.isMatch("adceb", "*a*b") << endl;
+	cout << 0 << s.isMatch("acdcb", "a*c?b") << endl;
+	cout << 1 << s.isMatch("aabaac", "*a?c") << endl;
+	cout << 1 << s.isMatch("aabaab", "*aab") << endl;
+	cout << 1 << s.isMatch("aacaab", "***aab***") << endl;
+	cout << 1 << s.isMatch("ab", "?*") << endl;
+	cout << 1 << s.isMatch("ab", "??") << endl;
 
-	cout << s.maxSatisfaction(grid) << endl;
 
 	return 0;
 }
