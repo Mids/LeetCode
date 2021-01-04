@@ -1,33 +1,26 @@
 #include <iostream>
 #include <vector>
-#include "21. Merge Two Sorted Lists.h"
+#include "980. Unique Paths III.h"
 
 using namespace std;
 
-void print(ListNode *listNode) {
-	auto node = listNode;
-	while (true) {
-		cout << node->val << '\t';
-
-		if (node->next == nullptr)
-			break;
-
-		node = node->next;
-	}
-
-	cout << endl;
-}
-
 int main() {
-	Solution s;
+	Solution s, s2, s3;
 
-	ListNode l1(1, new ListNode(2, new ListNode(4)));
-	ListNode l2(1, new ListNode(3, new ListNode(4)));
+	vector<vector<int>> grid = {{1, 0, 0, 0},
+								{0, 0, 0, 0},
+								{0, 0, 2, -1}};
+	vector<vector<int>> grid2 = {{1, 0, 0, 0},
+								 {0, 0, 0, 0},
+								 {0, 0, 0, 2}};
+	vector<vector<int>> grid3 = {{0, 1},
+								 {2, 0}};
+//	vector<vector<int>> grid = {{1,-1},{0,2}};
 
-	print(&l1);
-	print(&l2);
 
-	print(s.mergeTwoLists(&l1, &l2));
+	cout << s.uniquePathsIII(grid) << endl;
+	cout << s2.uniquePathsIII(grid2) << endl;
+	cout << s3.uniquePathsIII(grid3) << endl;
 
 
 	return 0;
