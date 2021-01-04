@@ -9,30 +9,29 @@ using namespace std;
 
 class SubrectangleQueries {
 public:
-	vector<vector<int>> rect;
+	vector<vector<int>> *rect;
 
 	SubrectangleQueries(vector<vector<int>> &rectangle) {
-		rect = rectangle;
+		rect = &rectangle;
 	}
 
 	void updateSubrectangle(int row1, int col1, int row2, int col2, int newValue) {
 
 		for (int i = row1; i <= row2; i++) {
 			for (int j = col1; j <= col2; j++) {
-				rect[i][j] = newValue;
+				(*rect)[i][j] = newValue;
 			}
 		}
 	}
 
 	int getValue(int row, int col) {
-		return rect[row][col];
+		return (*rect)[row][col];
 	}
 
 	void print() {
-		for (int i = 0; i < rect.size(); i++) {
-
-			for (int j = 0; j < rect[i].size(); j++) {
-				cout << rect[i][j] << "\t";
+		for (auto &i : *rect) {
+			for (int j : i) {
+				cout << j << "\t";
 			}
 			cout << endl;
 		}
