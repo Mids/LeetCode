@@ -1,0 +1,38 @@
+//
+// Created by jin on 1/11/2021.
+//
+
+#ifndef LEETCODE_88_MERGE_SORTED_ARRAY_H
+#define LEETCODE_88_MERGE_SORTED_ARRAY_H
+
+using namespace std;
+
+class Solution {
+public:
+	void merge(vector<int> &nums1, int m, vector<int> &nums2, int n) {
+		if (!n) return;
+		int size = m + n;
+		auto it1 = nums1.begin(), it2 = nums2.begin();
+		vector<int> newNums(size);
+		auto newNumsIt = newNums.begin();
+		while (m > 0 && it2 != nums2.end()) {
+			if (*it1 < *it2) {
+				*newNumsIt++ = *it1++;
+				--m;
+			} else {
+				*newNumsIt++ = *it2++;
+			}
+		}
+
+		while (*it1 != 0) {
+			*newNumsIt++ = *it1++;
+		}
+		while (it2 != nums2.end()) {
+			*newNumsIt++ = *it2++;
+		}
+
+		nums1.assign(newNums.begin(), newNums.end());
+	}
+};
+
+#endif //LEETCODE_88_MERGE_SORTED_ARRAY_H
