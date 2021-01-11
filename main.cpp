@@ -1,14 +1,15 @@
 #include <iostream>
 #include <vector>
-#include "3. Longest Substring Without Repeating Characters.h"
+#include "1649. Create Sorted Array through Instructions.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	cout << s.lengthOfLongestSubstring("abcabcbb") << endl;
-	cout << s.lengthOfLongestSubstring("dvdf") << endl;
+	vector<int> arr = {1,3,3,3,2,4,2,1,2};
+
+	cout << s.createSortedArray(arr) << endl;
 
 	return 0;
 }
