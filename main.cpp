@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "1539. Kth Missing Positive Number.h"
+#include "3. Longest Substring Without Repeating Characters.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {2,3,4,7,11};
-	cout << s.findKthPositive(arr,5);
+	cout << s.lengthOfLongestSubstring("abcabcbb") << endl;
+	cout << s.lengthOfLongestSubstring("dvdf") << endl;
 
 	return 0;
 }
