@@ -1,16 +1,20 @@
 #include <iostream>
 #include <vector>
-#include "122. Best Time to Buy and Sell Stock II.h"
+#include "189. Rotate Array.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {7, 1, 5, 3, 6, 4};
-	vector<int> arr2 = {1};
+	vector<int> arr = {1, 2, 3, 4, 5, 6};
+	vector<int> arr2 = {-1, -100, 3, 99};
 
-	cout << s.maxProfit(arr) << endl;
+	s.rotate(arr, 4);
+
+	for (auto a:arr) {
+		cout << a << '\t';
+	}
 
 	return 0;
 }
