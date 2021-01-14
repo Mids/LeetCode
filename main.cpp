@@ -1,19 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "88. Merge Sorted Array.h"
+#include "122. Best Time to Buy and Sell Stock II.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {2, 0};
+	vector<int> arr = {7, 1, 5, 3, 6, 4};
 	vector<int> arr2 = {1};
 
-	s.merge(arr, 1, arr2, 1);
-
-	for (auto a : arr)
-		cout << a << '\t';
+	cout << s.maxProfit(arr) << endl;
 
 	return 0;
 }
