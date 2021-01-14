@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "350. Intersection of Two Arrays II.h"
+#include "66. Plus One.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<int> arr = {1, 2, 2, 1};
 	vector<int> arr2 = {2, 2};
 
-	auto a = s.intersect(arr, arr2);
+	auto a = s.plusOne(arr);
 
 	for (auto v : a) {
 		cout << v << ' ';
