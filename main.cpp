@@ -1,18 +1,18 @@
 #include <iostream>
 #include <vector>
-#include "66. Plus One.h"
+#include "283. Move Zeroes.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {1, 2, 2, 1};
+	vector<int> arr = {0,1,0,3,12};
 	vector<int> arr2 = {2, 2};
 
-	auto a = s.plusOne(arr);
+	s.moveZeroes(arr);
 
-	for (auto v : a) {
+	for (auto v : arr) {
 		cout << v << ' ';
 	}
 
