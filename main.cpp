@@ -1,16 +1,20 @@
 #include <iostream>
 #include <vector>
-#include "136. Single Number.h"
+#include "350. Intersection of Two Arrays II.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {4,1,2,1,2};
-	vector<int> arr2 = {-1, -100, 3, 99};
+	vector<int> arr = {1, 2, 2, 1};
+	vector<int> arr2 = {2, 2};
 
-	cout << s.singleNumber(arr);
+	auto a = s.intersect(arr, arr2);
+
+	for (auto v : a) {
+		cout << v << ' ';
+	}
 
 
 	return 0;
