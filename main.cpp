@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "28. Implement strStr().h"
+#include "38. Count and Say.h"
 
 using namespace std;
 
@@ -20,8 +20,8 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.strStr("hello", "ll") << endl;
-	cout << s.strStr("aaaaa", "bba") << endl;
+	for(int i=1; i<=30; ++i)
+		cout << i << ": " << s.countAndSay(i) << endl;
 
 
 	return 0;
