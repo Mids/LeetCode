@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "242. Valid Anagram.h"
+#include "125. Valid Palindrome.h"
 
 using namespace std;
 
@@ -20,8 +20,8 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.isAnagram("anagram","nagaram" ) << endl;
-	cout << s.isAnagram("rat", "car") << endl;
+	cout << s.isPalindrome("A man, a plan, a canal: Panama") << endl;
+	cout << s.isPalindrome("race a car") << endl;
 
 
 	return 0;
