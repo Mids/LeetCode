@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "1658. Minimum Operations to Reduce X to Zero.h"
+#include "344. Reverse String.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {1000, 1, 1, 2, 3};
+	vector<char> arr = {'h','e','l','l','o'};
 	vector<int> arr2 = {2, 2};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -21,7 +21,10 @@ int main() {
 
 //	auto a = s.numRescueBoats(arr, 3);
 
-	cout << s.minOperations(arr, 1004);
+	s.	reverseString(arr);
+	for (auto c : arr) {
+		cout << c << ' ';
+	}
 
 
 //	for (auto v : a) {
