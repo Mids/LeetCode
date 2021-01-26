@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "125. Valid Palindrome.h"
+#include "8. String to Integer (atoi).h"
 
 using namespace std;
 
@@ -20,8 +20,8 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.isPalindrome("A man, a plan, a canal: Panama") << endl;
-	cout << s.isPalindrome("race a car") << endl;
+	cout << s.	myAtoi("4193 with words") << endl;
+	cout << s.	myAtoi("words and 987") << endl;
 
 
 	return 0;
