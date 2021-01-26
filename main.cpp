@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "38. Count and Say.h"
+#include "14. Longest Common Prefix.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<char> arr = {'h', 'e', 'l', 'l', 'o'};
-	vector<int> arr2 = {2, 2};
+	vector<string> arr = {"flower", "flow", "flight"};
+	vector<string> arr2 = {"ab", "a"};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -20,8 +20,7 @@ int main() {
 								  {7, 8, 9}};
 
 
-	for(int i=1; i<=30; ++i)
-		cout << i << ": " << s.countAndSay(i) << endl;
+	cout << s.longestCommonPrefix(arr) << endl;
 
 
 	return 0;
