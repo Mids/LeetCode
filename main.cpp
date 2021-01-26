@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "7. Reverse Integer.h"
+#include "387. First Unique Character in a String.h"
 
 using namespace std;
 
@@ -19,22 +19,9 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-//	auto a = s.numRescueBoats(arr, 3);
 
-	cout << s.reverse(-2147483648) << endl;
-	cout << s.reverse(-2147483641) << endl;
-	cout << s.reverse(2147463647) << endl;
-
-//	for (auto v : a) {
-//		cout << v << ' ';
-//	}
-
-//	for (auto vv : board2) {
-//		for (auto v : vv) {
-//			cout << v << ' ';
-//		}
-//		cout << endl;
-//	}
+	cout << s.firstUniqChar("leetcode") << endl;
+	cout << s.firstUniqChar("loveleetcode") << endl;
 
 
 	return 0;
