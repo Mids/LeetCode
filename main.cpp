@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "387. First Unique Character in a String.h"
+#include "242. Valid Anagram.h"
 
 using namespace std;
 
@@ -20,8 +20,8 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.firstUniqChar("leetcode") << endl;
-	cout << s.firstUniqChar("loveleetcode") << endl;
+	cout << s.isAnagram("anagram","nagaram" ) << endl;
+	cout << s.isAnagram("rat", "car") << endl;
 
 
 	return 0;
