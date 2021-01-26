@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "48. Rotate Image.h"
+#include "1658. Minimum Operations to Reduce X to Zero.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<int> arr = {3, 2, 2, 1};
+	vector<int> arr = {1000, 1, 1, 2, 3};
 	vector<int> arr2 = {2, 2};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -21,19 +21,19 @@ int main() {
 
 //	auto a = s.numRescueBoats(arr, 3);
 
-	s.rotate(board2);
+	cout << s.minOperations(arr, 1004);
 
 
 //	for (auto v : a) {
 //		cout << v << ' ';
 //	}
 
-	for (auto vv : board2) {
-		for (auto v : vv) {
-			cout << v << ' ';
-		}
-		cout << endl;
-	}
+//	for (auto vv : board2) {
+//		for (auto v : vv) {
+//			cout << v << ' ';
+//		}
+//		cout << endl;
+//	}
 
 
 	return 0;
