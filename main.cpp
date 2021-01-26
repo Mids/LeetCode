@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "8. String to Integer (atoi).h"
+#include "28. Implement strStr().h"
 
 using namespace std;
 
@@ -20,8 +20,8 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.	myAtoi("4193 with words") << endl;
-	cout << s.	myAtoi("words and 987") << endl;
+	cout << s.strStr("hello", "ll") << endl;
+	cout << s.strStr("aaaaa", "bba") << endl;
 
 
 	return 0;
