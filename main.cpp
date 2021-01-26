@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "344. Reverse String.h"
+#include "7. Reverse Integer.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<char> arr = {'h','e','l','l','o'};
+	vector<char> arr = {'h', 'e', 'l', 'l', 'o'};
 	vector<int> arr2 = {2, 2};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -21,11 +21,9 @@ int main() {
 
 //	auto a = s.numRescueBoats(arr, 3);
 
-	s.	reverseString(arr);
-	for (auto c : arr) {
-		cout << c << ' ';
-	}
-
+	cout << s.reverse(-2147483648) << endl;
+	cout << s.reverse(-2147483641) << endl;
+	cout << s.reverse(2147463647) << endl;
 
 //	for (auto v : a) {
 //		cout << v << ' ';
