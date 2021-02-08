@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "14. Longest Common Prefix.h"
+#include "237. Delete Node in a Linked List.h"
 
 using namespace std;
 
@@ -20,7 +20,22 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.longestCommonPrefix(arr) << endl;
+	ListNode d(9);
+	ListNode c(1);
+	c.next = &d;
+	ListNode b(5);
+	b.next = &c;
+	ListNode a(4);
+	a.next = &b;
+
+	s.deleteNode(&a);
+
+	ListNode* head = &a;
+
+	while (head != nullptr) {
+		cout << head->val << '\t';
+		head = head->next;
+	}
 
 
 	return 0;
