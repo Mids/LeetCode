@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "19. Remove Nth Node From End of List.h"
+#include "206. Reverse Linked List.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ int main() {
 	a.next = &b;
 
 
-	ListNode* head = s.removeNthFromEnd(&a, 4);
+	ListNode* head = s.reverseList(&a);
 
 	while (head != nullptr) {
 		cout << head->val << '\t';
