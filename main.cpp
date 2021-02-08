@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "237. Delete Node in a Linked List.h"
+#include "19. Remove Nth Node From End of List.h"
 
 using namespace std;
 
@@ -20,17 +20,16 @@ int main() {
 								  {7, 8, 9}};
 
 
-	ListNode d(9);
-	ListNode c(1);
+	ListNode d(4);
+	ListNode c(3);
 	c.next = &d;
-	ListNode b(5);
+	ListNode b(2);
 	b.next = &c;
-	ListNode a(4);
+	ListNode a(1);
 	a.next = &b;
 
-	s.deleteNode(&a);
 
-	ListNode* head = &a;
+	ListNode* head = s.removeNthFromEnd(&a, 4);
 
 	while (head != nullptr) {
 		cout << head->val << '\t';
