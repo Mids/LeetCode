@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "206. Reverse Linked List.h"
+#include "234. Palindrome Linked List.h"
 
 using namespace std;
 
@@ -20,21 +20,24 @@ int main() {
 								  {7, 8, 9}};
 
 
-	ListNode d(4);
-	ListNode c(3);
+	ListNode e(1);
+	ListNode d(1);
+//	d.next = &e;
+	ListNode c(2);
 	c.next = &d;
 	ListNode b(2);
 	b.next = &c;
 	ListNode a(1);
 	a.next = &b;
 
+	cout << s.isPalindrome(&a);
 
-	ListNode* head = s.reverseList(&a);
-
-	while (head != nullptr) {
-		cout << head->val << '\t';
-		head = head->next;
-	}
+//	ListNode* head = &a;
+//
+//	while (head != nullptr) {
+//		cout << head->val << '\t';
+//		head = head->next;
+//	}
 
 
 	return 0;
