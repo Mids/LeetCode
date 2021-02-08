@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "234. Palindrome Linked List.h"
+#include "141. Linked List Cycle.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 	ListNode a(1);
 	a.next = &b;
 
-	cout << s.isPalindrome(&a);
+	cout << s.hasCycle(&a);
 
 //	ListNode* head = &a;
 //
