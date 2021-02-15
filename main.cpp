@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "108. Convert Sorted Array to Binary Search Tree.h"
+#include "70. Climbing Stairs.h"
 
 using namespace std;
 
@@ -21,11 +21,8 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	TreeNode c(3);
-	TreeNode b(3);
-	TreeNode a(2, &b, &c);
 
-	auto aa = s.sortedArrayToBST(nums);
+	cout << s.climbStairs(2);
 
 //	ListNode* head = &a;
 //
