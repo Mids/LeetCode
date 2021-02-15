@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "53. Maximum Subarray.h"
+#include "198. House Robber.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
 
-	vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+	vector<int> nums = {1,2,3,1};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -22,7 +22,7 @@ int main() {
 								  {7, 8, 9}};
 
 
-	cout << s.maxSubArray(nums);
+	cout << s.rob(nums);
 
 //	ListNode* head = &a;
 //
