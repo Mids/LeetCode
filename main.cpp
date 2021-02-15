@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "141. Linked List Cycle.h"
+#include "278. First Bad Version.h"
 
 using namespace std;
 
@@ -20,17 +20,7 @@ int main() {
 								  {7, 8, 9}};
 
 
-	ListNode e(1);
-	ListNode d(1);
-//	d.next = &e;
-	ListNode c(2);
-	c.next = &d;
-	ListNode b(2);
-	b.next = &c;
-	ListNode a(1);
-	a.next = &b;
-
-	cout << s.hasCycle(&a);
+	cout << s.firstBadVersion(5);
 
 //	ListNode* head = &a;
 //
