@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "278. First Bad Version.h"
+#include "104. Maximum Depth of Binary Tree.h"
 
 using namespace std;
 
@@ -19,8 +19,10 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
+	TreeNode c(2);
+	TreeNode a(1, nullptr, &c);
 
-	cout << s.firstBadVersion(5);
+	cout << s.maxDepth(&a);
 
 //	ListNode* head = &a;
 //
