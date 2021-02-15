@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "102. Binary Tree Level Order Traversal.h"
+#include "108. Convert Sorted Array to Binary Search Tree.h"
 
 using namespace std;
 
@@ -9,6 +9,8 @@ int main() {
 
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
+
+	vector<int> nums = {-10, -3, 0, 5, 9};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -23,17 +25,12 @@ int main() {
 	TreeNode b(3);
 	TreeNode a(2, &b, &c);
 
-	auto aa = s.levelOrder(&a);
+	auto aa = s.sortedArrayToBST(nums);
 
 //	ListNode* head = &a;
 //
 
-	for (const auto &i : aa) {
-		for (auto j : i) {
-			cout << j << ' ';
-		}
-		cout << endl;
-	}
+
 
 
 	return 0;
