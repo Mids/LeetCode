@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "101. Symmetric Tree.h"
+#include "102. Binary Tree Level Order Traversal.h"
 
 using namespace std;
 
@@ -23,14 +23,17 @@ int main() {
 	TreeNode b(3);
 	TreeNode a(2, &b, &c);
 
-	cout << s.isSymmetric(&a);
+	auto aa = s.levelOrder(&a);
 
 //	ListNode* head = &a;
 //
-//	while (head != nullptr) {
-//		cout << head->val << '\t';
-//		head = head->next;
-//	}
+
+	for (const auto &i : aa) {
+		for (auto j : i) {
+			cout << j << ' ';
+		}
+		cout << endl;
+	}
 
 
 	return 0;
