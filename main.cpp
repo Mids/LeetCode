@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "104. Maximum Depth of Binary Tree.h"
+#include "98. Validate Binary Search Tree.h"
 
 using namespace std;
 
@@ -19,10 +19,11 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	TreeNode c(2);
-	TreeNode a(1, nullptr, &c);
+	TreeNode c(3);
+	TreeNode b(1);
+	TreeNode a(2, &b, &c);
 
-	cout << s.maxDepth(&a);
+	cout << s.isValidBST(&a);
 
 //	ListNode* head = &a;
 //
