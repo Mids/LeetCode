@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "98. Validate Binary Search Tree.h"
+#include "101. Symmetric Tree.h"
 
 using namespace std;
 
@@ -20,10 +20,10 @@ int main() {
 								  {7, 8, 9}};
 
 	TreeNode c(3);
-	TreeNode b(1);
+	TreeNode b(3);
 	TreeNode a(2, &b, &c);
 
-	cout << s.isValidBST(&a);
+	cout << s.isSymmetric(&a);
 
 //	ListNode* head = &a;
 //
