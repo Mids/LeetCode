@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "326. Power of Three.h"
+#include "13. Roman to Integer.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.isPowerOfThree(10);
+	cout << s.romanToInt("MCMXCIV");
 
 //	ListNode* head = &a;
 //
