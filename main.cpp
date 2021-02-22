@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "204. Count Primes.h"
+#include "326. Power of Three.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.countPrimes(10);
+	cout << s.isPowerOfThree(10);
 
 //	ListNode* head = &a;
 //
