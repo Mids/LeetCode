@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "412. Fizz Buzz.h"
+#include "204. Count Primes.h"
 
 using namespace std;
 
@@ -21,12 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	auto a = s.fizzBuzz(15);
-
-	for (auto b : a) {
-		cout << b << '\n';
-	}
-//	cout << s.rob(nums);
+	cout << s.countPrimes(10);
 
 //	ListNode* head = &a;
 //
