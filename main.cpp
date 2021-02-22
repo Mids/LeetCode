@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
-#include "155. Min Stack.h"
+#include "412. Fizz Buzz.h"
 
 using namespace std;
 
 int main() {
-//	Solution s;
+	Solution s;
 
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
@@ -21,15 +21,11 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	MinStack* obj = new MinStack();
-	obj->push(3);
-	obj->push(4);
-	obj->pop();
-	int param_3 = obj->top();
-	int param_4 = obj->getMin();
+	auto a = s.fizzBuzz(15);
 
-	cout << param_3 << '\t' << param_4;
-
+	for (auto b : a) {
+		cout << b << '\n';
+	}
 //	cout << s.rob(nums);
 
 //	ListNode* head = &a;
