@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "384. Shuffle an Array.h"
+#include "155. Min Stack.h"
 
 using namespace std;
 
@@ -21,20 +21,14 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	Solution* obj = new Solution(nums);
+	MinStack* obj = new MinStack();
+	obj->push(3);
+	obj->push(4);
+	obj->pop();
+	int param_3 = obj->top();
+	int param_4 = obj->getMin();
 
-	vector<int> param_1 = obj->reset();
-
-	for (auto i : param_1) {
-		cout << i << '\t';
-	}
-	cout << '\n';
-	vector<int> param_2 = obj->shuffle();
-
-	for (auto i : param_2) {
-		cout << i << '\t';
-	}
-	cout << '\n';
+	cout << param_3 << '\t' << param_4;
 
 //	cout << s.rob(nums);
 
