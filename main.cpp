@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "118. Pascal's Triangle.h"
+#include "20. Valid Parentheses.h"
 
 using namespace std;
 
@@ -21,22 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-//	cout << s.generate(5);
-
-	auto r = s.generate(5);
-
-	for (const auto& k : r) {
-		for (auto j : k) {
-			cout << j << ' ';
-		}
-		cout << endl;
-	}
-
-//	ListNode* head = &a;
-//
-
-
-
+	cout << s.isValid("([{}])");
 
 	return 0;
 }
