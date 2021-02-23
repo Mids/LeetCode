@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "191. Number of 1 Bits.h"
+#include "461. Hamming Distance.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.hammingWeight(11);
+	cout << s.hammingDistance(1, 4);
 
 //	ListNode* head = &a;
 //
