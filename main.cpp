@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "190. Reverse Bits.h"
+#include "118. Pascal's Triangle.h"
 
 using namespace std;
 
@@ -21,7 +21,16 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.reverseBits(43261596);
+//	cout << s.generate(5);
+
+	auto r = s.generate(5);
+
+	for (const auto& k : r) {
+		for (auto j : k) {
+			cout << j << ' ';
+		}
+		cout << endl;
+	}
 
 //	ListNode* head = &a;
 //
