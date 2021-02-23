@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "461. Hamming Distance.h"
+#include "190. Reverse Bits.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.hammingDistance(1, 4);
+	cout << s.reverseBits(43261596);
 
 //	ListNode* head = &a;
 //
