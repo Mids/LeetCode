@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "20. Valid Parentheses.h"
+#include "268. Missing Number.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
 
-	vector<int> nums = {1,2,3};
+	vector<int> nums = {0};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.isValid("([{}])");
+	cout << s.missingNumber(nums);
 
 	return 0;
 }
