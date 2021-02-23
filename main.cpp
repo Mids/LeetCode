@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "13. Roman to Integer.h"
+#include "191. Number of 1 Bits.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.romanToInt("MCMXCIV");
+	cout << s.hammingWeight(11);
 
 //	ListNode* head = &a;
 //
