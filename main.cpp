@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "268. Missing Number.h"
+#include "279. Perfect Squares.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.missingNumber(nums);
+	cout << s.numSquares(9999);
 
 	return 0;
 }
