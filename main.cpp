@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "279. Perfect Squares.h"
+#include "88. Merge Sorted Array.h"
 
 using namespace std;
 
@@ -10,7 +10,8 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
 
-	vector<int> nums = {0};
+	vector<int> nums = {1,3,5,0,0,0};
+	vector<int> nums1 = {2,4,6};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -21,7 +22,11 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	cout << s.numSquares(9999);
+	 s.merge(nums, 3, nums1, 3);
+
+	for (auto n : nums) {
+		cout << n << endl;
+	}
 
 	return 0;
 }
