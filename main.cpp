@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "88. Merge Sorted Array.h"
+#include "15. 3Sum.h"
 
 using namespace std;
 
@@ -10,8 +10,8 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a"};
 
-	vector<int> nums = {1,3,5,0,0,0};
-	vector<int> nums1 = {2,4,6};
+	vector<int> nums = {1, 3, 5, 0, 0, 0};
+	vector<int> nums1 = {2, 4, 6};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
 								 {2,  4,  8,  10},
@@ -22,10 +22,12 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	 s.merge(nums, 3, nums1, 3);
+	auto out = s.threeSum(*new vector<int> {0,0,0,0});
 
-	for (auto n : nums) {
-		cout << n << endl;
+	for (auto n : out) {
+		for (auto i:n)
+			cout << i << "\t";
+		cout << endl;
 	}
 
 	return 0;
