@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "15. 3Sum.h"
+#include "73. Set Matrix Zeroes.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main() {
 	vector<int> nums1 = {2, 4, 6};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
-								 {2,  4,  8,  10},
+								 {2,  0,  8,  10},
 								 {13, 3,  6,  7},
 								 {15, 14, 12, 16}};
 
@@ -22,9 +22,9 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	auto out = s.threeSum(*new vector<int> {0,0,0,0});
+	s.setZeroes(board);
 
-	for (auto n : out) {
+	for (auto n : board) {
 		for (auto i:n)
 			cout << i << "\t";
 		cout << endl;
