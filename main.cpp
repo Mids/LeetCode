@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "49. Group Anagrams.h"
+#include "5. Longest Palindromic Substring.h"
 
 using namespace std;
 
@@ -22,13 +22,13 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	s.groupAnagrams(arr2);
+	cout << s.longestPalindrome("babad");
 
-	for (auto n : s.groupAnagrams(arr2)) {
-		for (auto i:n)
-			cout << i << "\t";
-		cout << endl;
-	}
+//	for (auto n : s.groupAnagrams(arr2)) {
+//		for (auto i:n)
+//			cout << i << "\t";
+//		cout << endl;
+//	}
 
 	return 0;
 }
