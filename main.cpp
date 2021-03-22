@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "328. Odd Even Linked List.h"
+#include "160. Intersection of Two Linked Lists.h"
 
 using namespace std;
 
@@ -23,15 +23,15 @@ int main() {
 								  {7, 8, 9}};
 
 	ListNode c(6);
-	ListNode b(4);
-	ListNode a(2,&b);
+	ListNode b(4, &c);
+	ListNode a(2, &b);
 	ListNode f(4, &a);
-	ListNode e(6,&f);
-	ListNode d(5,&e);
+	ListNode e(6, &b);
+	ListNode d(5, &e);
 
-	auto aa=  s.oddEvenList(&d);
+	auto aa = s.getIntersectionNode(&f, &d);
 
-	while(aa){
+	while (aa) {
 		cout << aa->val << '\t';
 		aa = aa->next;
 	}
