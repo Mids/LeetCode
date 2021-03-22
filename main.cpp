@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "2. Add Two Numbers.h"
+#include "328. Odd Even Linked List.h"
 
 using namespace std;
 
@@ -23,13 +23,13 @@ int main() {
 								  {7, 8, 9}};
 
 	ListNode c(6);
-	ListNode b(4,&c);
+	ListNode b(4);
 	ListNode a(2,&b);
-	ListNode f(4);
+	ListNode f(4, &a);
 	ListNode e(6,&f);
 	ListNode d(5,&e);
 
-	auto aa=  s.addTwoNumbers(&a,&d);
+	auto aa=  s.oddEvenList(&d);
 
 	while(aa){
 		cout << aa->val << '\t';
