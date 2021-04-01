@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "94. Binary Tree Inorder Traversal.h"
+#include "103. Binary Tree Zigzag Level Order Traversal.h"
 
 using namespace std;
 
@@ -22,17 +22,20 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	TreeNode c(3);
-	TreeNode b(2, &c, nullptr);
-	TreeNode a(1, nullptr, &b);
-//	TreeNode f(4, &a);
-//	TreeNode e(6, &b);
+	TreeNode c(15);
+	TreeNode b(7);
+	TreeNode a(20, &c, &b);
+	TreeNode f(9);
+	TreeNode e(3, &f, &a);
 //	TreeNode d(5, &e);
 
-	auto aa = s.inorderTraversal(&a);
+	auto aa = s.zigzagLevelOrder(&e);
 
 	for (auto ac : aa) {
-		cout << ac << '\t';
+		for (auto bb : ac) {
+			cout << bb << ' ';
+		}
+		cout << endl;
 	}
 
 	return 0;
