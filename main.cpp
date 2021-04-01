@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "160. Intersection of Two Linked Lists.h"
+#include "94. Binary Tree Inorder Traversal.h"
 
 using namespace std;
 
@@ -22,18 +22,17 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	ListNode c(6);
-	ListNode b(4, &c);
-	ListNode a(2, &b);
-	ListNode f(4, &a);
-	ListNode e(6, &b);
-	ListNode d(5, &e);
+	TreeNode c(3);
+	TreeNode b(2, &c, nullptr);
+	TreeNode a(1, nullptr, &b);
+//	TreeNode f(4, &a);
+//	TreeNode e(6, &b);
+//	TreeNode d(5, &e);
 
-	auto aa = s.getIntersectionNode(&f, &d);
+	auto aa = s.inorderTraversal(&a);
 
-	while (aa) {
-		cout << aa->val << '\t';
-		aa = aa->next;
+	for (auto ac : aa) {
+		cout << ac << '\t';
 	}
 
 	return 0;
