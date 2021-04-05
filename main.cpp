@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "105. Construct Binary Tree from Preorder and Inorder Traversal.h"
+#include "116. Populating Next Right Pointers in Each Node.h"
 
 using namespace std;
 
@@ -22,21 +22,25 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-//	TreeNode c(15);
-//	TreeNode b(7);
-//	TreeNode a(20, &c, &b);
-//	TreeNode f(9);
-//	TreeNode e(3, &f, &a);
-//	TreeNode d(5, &e);
+	Node a7(7);
+	Node a6(6);
+	Node a5(5);
+	Node a4(4);
+	Node a3(3, &a6, &a7, nullptr);
+	Node a2(2, &a4, &a5, nullptr);
+	Node a1(1, &a2, &a3, nullptr);
 
-	auto aa = s.buildTree(nums, nums1);
+	auto aa = s.connect(&a1);
 
 	while(aa){
-
-		cout << aa->left->val<< ' ';
-		cout << aa->val<< ' ';
-		cout << aa->right->val<< ' ';
-		break;
+		cout << aa->val << ' ';
+		if(aa -> next == nullptr)
+		{
+			aa = aa->left;
+			cout << endl;
+		}
+		else
+			aa = aa->next;
 	}
 
 	return 0;
