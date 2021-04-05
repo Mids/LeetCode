@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "230. Kth Smallest Element in a BST.h"
+#include "200. Number of Islands.h"
 
 using namespace std;
 
@@ -22,16 +22,19 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	TreeNode a6(6);
-	TreeNode a4(4);
-	TreeNode a1(1);
-	TreeNode a2(2, &a1, nullptr);
-	TreeNode a3(3, &a2, &a4);
-	TreeNode a5(5, &a3, &a6);
+	vector<vector<char>> grid = {{'1', '1', '1', '1', '0'},
+								 {'1', '1', '0', '1', '0'},
+								 {'1', '1', '0', '0', '0'},
+								 {'0', '0', '0', '0', '0'}};
+	vector<vector<char>> grid2 = {{'1', '1', '0', '0', '0'},
+								  {'1', '1', '0', '0', '0'},
+								  {'0', '0', '1', '0', '0'},
+								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.kthSmallest(&a5, 3);
+	auto aa = s.numIslands(grid);
+	auto aa2 = s.numIslands(grid2);
 
-	cout << aa;
+	cout << aa << aa2;
 
 	return 0;
 }
