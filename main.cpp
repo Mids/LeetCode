@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "116. Populating Next Right Pointers in Each Node.h"
+#include "230. Kth Smallest Element in a BST.h"
 
 using namespace std;
 
@@ -22,26 +22,16 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	Node a7(7);
-	Node a6(6);
-	Node a5(5);
-	Node a4(4);
-	Node a3(3, &a6, &a7, nullptr);
-	Node a2(2, &a4, &a5, nullptr);
-	Node a1(1, &a2, &a3, nullptr);
+	TreeNode a6(6);
+	TreeNode a4(4);
+	TreeNode a1(1);
+	TreeNode a2(2, &a1, nullptr);
+	TreeNode a3(3, &a2, &a4);
+	TreeNode a5(5, &a3, &a6);
 
-	auto aa = s.connect(&a1);
+	auto aa = s.kthSmallest(&a5, 3);
 
-	while(aa){
-		cout << aa->val << ' ';
-		if(aa -> next == nullptr)
-		{
-			aa = aa->left;
-			cout << endl;
-		}
-		else
-			aa = aa->next;
-	}
+	cout << aa;
 
 	return 0;
 }
