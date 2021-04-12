@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "17. Letter Combinations of a Phone Number.h"
+#include "22. Generate Parentheses.h"
 
 using namespace std;
 
@@ -31,10 +31,10 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.letterCombinations("23");
+	auto aa = s.generateParenthesis(3);
 
 	for (auto a : aa) {
-		cout << a << '\t';
+		cout << a << '\n';
 	}
 
 	return 0;
