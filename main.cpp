@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "200. Number of Islands.h"
+#include "17. Letter Combinations of a Phone Number.h"
 
 using namespace std;
 
@@ -31,10 +31,11 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.numIslands(grid);
-	auto aa2 = s.numIslands(grid2);
+	auto aa = s.letterCombinations("23");
 
-	cout << aa << aa2;
+	for (auto a : aa) {
+		cout << a << '\t';
+	}
 
 	return 0;
 }
