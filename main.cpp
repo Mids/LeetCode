@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.exist(grid, "ABCB");
+	auto aa = s.exist(grid, "ABCCFS");
 
 	cout << aa;
 

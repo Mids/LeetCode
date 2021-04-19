@@ -10,18 +10,17 @@ using namespace std;
 class Solution {
 public:
 	vector<vector<char>> *inputBoard;
-	string *inputWord;
 	int rowSize, colSize;
 
-	bool exist(vector<vector<char>> &board, string word) {
+	bool exist(vector<vector<char>> &board, const string &word) {
 		inputBoard = &board;
-		inputWord = &word;
 		rowSize = board.size();
 		colSize = board[0].size();
+		auto str = word.c_str();
 
 		for (auto i = 0; i < rowSize; ++i) {
 			for (auto j = 0; j < colSize; ++j) {
-				if (exist(i, j, 0))
+				if (exist(i, j, str))
 					return true;
 			}
 		}
@@ -29,24 +28,20 @@ public:
 		return false;
 	}
 
-	bool exist(int row, int col, int n) {
-		if (row < 0 || col < 0 || row == rowSize || col == colSize)
+	bool exist(int row, int col, const char *n) {
+		if (row < 0 || col < 0 || row == rowSize || col == colSize || (*inputBoard)[row][col] != (*n))
 			return false;
 
-		auto v = (*inputBoard)[row][col];
-		if (!v || v != (*inputWord)[n++])
-			return false;
-
-		if (n == inputWord->size())
+		if (!*(n + 1))
 			return true;
 
 		(*inputBoard)[row][col] = 0;
-		if (exist(row + 1, col, n)
-			|| exist(row, col + 1, n)
-			|| exist(row - 1, col, n)
-			|| exist(row, col - 1, n))
+		if (exist(row + 1, col, n + 1)
+			|| exist(row, col + 1, n + 1)
+			|| exist(row - 1, col, n + 1)
+			|| exist(row, col - 1, n + 1))
 			return true;
-		(*inputBoard)[row][col] = v;
+		(*inputBoard)[row][col] = *n;
 
 		return false;
 	}
