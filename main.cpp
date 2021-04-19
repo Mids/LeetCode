@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "22. Generate Parentheses.h"
+#include "78. Subsets.h"
 
 using namespace std;
 
@@ -31,10 +31,13 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.generateParenthesis(3);
+	auto aa = s.subsets(nums);
 
 	for (auto a : aa) {
-		cout << a << '\n';
+		for(auto b : a){
+			cout << b << ' ';
+		}
+		cout << '\n';
 	}
 
 	return 0;
