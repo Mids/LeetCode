@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "78. Subsets.h"
+#include "79. Word Search.h"
 
 using namespace std;
 
@@ -22,23 +22,17 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	vector<vector<char>> grid = {{'1', '1', '1', '1', '0'},
-								 {'1', '1', '0', '1', '0'},
-								 {'1', '1', '0', '0', '0'},
-								 {'0', '0', '0', '0', '0'}};
+	vector<vector<char>> grid = {{'A', 'B', 'C', 'E'},
+								 {'S', 'F', 'C', 'S'},
+								 {'A', 'D', 'E', 'E'}};
 	vector<vector<char>> grid2 = {{'1', '1', '0', '0', '0'},
 								  {'1', '1', '0', '0', '0'},
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.subsets(nums);
+	auto aa = s.exist(grid, "ABCB");
 
-	for (auto a : aa) {
-		for(auto b : a){
-			cout << b << ' ';
-		}
-		cout << '\n';
-	}
+	cout << aa;
 
 	return 0;
 }
