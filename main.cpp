@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "79. Word Search.h"
+#include "75. Sort Colors.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1, 3, 5};
+	vector<int> nums = {2,1,0};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -30,9 +30,11 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.exist(grid, "ABCCFS");
+	s.sortColors(nums);
 
-	cout << aa;
+	for (auto a : nums) {
+		cout << a << ' ';
+	}
 
 	return 0;
 }
