@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "75. Sort Colors.h"
+#include "347. Top K Frequent Elements.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {2,1,0};
+	vector<int> nums = {6,0,1,4,9,7,-3,1,-4,-8,4,-7,-3,3,2,-3,9,5,-4,0};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -30,9 +30,9 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	s.sortColors(nums);
+	auto aa = s.topKFrequent(nums, 6);
 
-	for (auto a : nums) {
+	for (auto a : aa) {
 		cout << a << ' ';
 	}
 
