@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "162. Find Peak Element.h"
+#include "34. Find First and Last Position of Element in Sorted Array.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1,2,1,3,5,6,4};
+	vector<int> nums = {1, 2, 3};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -30,9 +30,11 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.findPeakElement(nums);
+	auto aa = s.searchRange(nums, 2);
 
-	cout << aa;
+	for (auto n:aa) {
+		cout << n << ' ';
+	}
 
 	return 0;
 }
