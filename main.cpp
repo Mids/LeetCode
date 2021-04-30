@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "34. Find First and Last Position of Element in Sorted Array.h"
+#include "56. Merge Intervals.h"
 
 using namespace std;
 
@@ -13,10 +13,10 @@ int main() {
 	vector<int> nums = {1, 2, 3};
 	vector<int> nums1 = {3, 1, 5};
 
-	vector<vector<int>> board = {{5,  1,  9,  11},
-								 {2,  0,  8,  10},
-								 {13, 3,  6,  7},
-								 {15, 14, 12, 16}};
+	vector<vector<int>> board = {{1,3},
+								 {2,6},
+								 {8,10},
+								 {15,18}};
 
 	vector<vector<int>> board2 = {{1, 2, 3},
 								  {4, 5, 6},
@@ -30,10 +30,13 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.searchRange(nums, 2);
+	auto aa = s.merge(board);
 
 	for (auto n:aa) {
-		cout << n << ' ';
+		for (auto nn : n) {
+			cout << nn << ' ';
+		}
+		cout << endl;
 	}
 
 	return 0;
