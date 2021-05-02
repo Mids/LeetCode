@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "56. Merge Intervals.h"
+#include "33. Search in Rotated Sorted Array.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1, 2, 3};
+	vector<int> nums = {1,2,3,4,5,6};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{1,3},
@@ -30,14 +30,9 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.merge(board);
+	cout <<  s.search(nums, 4);
 
-	for (auto n:aa) {
-		for (auto nn : n) {
-			cout << nn << ' ';
-		}
-		cout << endl;
-	}
+
 
 	return 0;
 }
