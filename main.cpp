@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "33. Search in Rotated Sorted Array.h"
+#include "240. Search a 2D Matrix II.h"
 
 using namespace std;
 
@@ -10,17 +10,18 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1,2,3,4,5,6};
+	vector<int> nums = {1, 2, 3, 4, 5, 6};
 	vector<int> nums1 = {3, 1, 5};
 
-	vector<vector<int>> board = {{1,3},
-								 {2,6},
-								 {8,10},
-								 {15,18}};
+	vector<vector<int>> board = {{1,  4,  7,  11, 15},
+								 {2,  5,  8,  12, 19},
+								 {3,  6,  9,  16, 22},
+								 {10, 13, 14, 17, 24},
+								 {18, 21, 23, 26, 30}};
 
-	vector<vector<int>> board2 = {{1, 2, 3},
-								  {4, 5, 6},
-								  {7, 8, 9}};
+	vector<vector<int>> board2 = {{1, 2, 3,4},
+								  {4, 5, 6,7},
+								  {7, 8, 9,10}};
 
 	vector<vector<char>> grid = {{'A', 'B', 'C', 'E'},
 								 {'S', 'F', 'C', 'S'},
@@ -30,9 +31,13 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	cout <<  s.search(nums, 4);
 
-
+	for (auto m : board) {
+		for (auto i : m) {
+			cout << s.searchMatrix(board, i) << ' ';
+		}
+		cout << endl;
+	}
 
 	return 0;
 }
