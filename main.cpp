@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "55. Jump Game.h"
+#include "62. Unique Paths.h"
 
 using namespace std;
 
@@ -32,7 +32,7 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	cout << s.canJump(nums);
+	cout << s.uniquePaths(3,7);
 
 	return 0;
 }
