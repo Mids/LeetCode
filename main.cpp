@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "240. Search a 2D Matrix II.h"
+#include "55. Jump Game.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1, 2, 3, 4, 5, 6};
+	vector<int> nums = {2,0,0};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{1,  4,  7,  11, 15},
@@ -32,12 +32,7 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	for (auto m : board) {
-		for (auto i : m) {
-			cout << s.searchMatrix(board, i) << ' ';
-		}
-		cout << endl;
-	}
+	cout << s.canJump(nums);
 
 	return 0;
 }
