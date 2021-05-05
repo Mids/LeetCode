@@ -9,13 +9,10 @@ using namespace std;
 
 class Solution {
 public:
-	int start, end;
-
 	bool searchMatrix(vector<vector<int>> &matrix, int target) {
 		int height = matrix.size();
 
-		int i = 0, j = matrix[0].size() - 1;
-		while (i < height && j >= 0) {
+		for (int i = 0, j = matrix[0].size() - 1; i < height && j >= 0;) {
 			if (matrix[i][j] < target) {
 				++i;
 			} else if (matrix[i][j] > target) {
