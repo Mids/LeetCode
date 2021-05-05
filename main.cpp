@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "62. Unique Paths.h"
+#include "322. Coin Change.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {2,0,0};
+	vector<int> nums = {1,2,5};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{1,  4,  7,  11, 15},
@@ -32,7 +32,7 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	cout << s.uniquePaths(3,7);
+	cout << s.coinChange(nums, 11);
 
 	return 0;
 }
