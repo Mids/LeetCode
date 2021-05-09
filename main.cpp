@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
-#include "297. Serialize and Deserialize Binary Tree.h"
+#include "380. Insert Delete GetRandom O(1).h"
 
 using namespace std;
 
 int main() {
-	Codec s;
+	RandomizedSet s;
 
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
@@ -31,13 +31,11 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	TreeNode a5(5);
-	TreeNode a4(4);
-	TreeNode a3(3, &a4, &a5);
-	TreeNode a2(2);
-	TreeNode a1(1, &a2, &a3);
-
-	cout << s.serialize(s.deserialize("[1,2]"));
+	RandomizedSet *obj = new RandomizedSet();
+	cout << obj->insert(3) << endl;
+	cout << obj->remove(3) << endl;
+	cout << obj->insert(3) << endl;
+	cout << obj->getRandom() << endl;
 
 	return 0;
 }
