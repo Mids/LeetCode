@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "171. Excel Sheet Column Number.h"
+#include "50. Pow(x, n).h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.titleToNumber("FXSHRXW");
+	auto aa = s.myPow(2.0, -2);
 
 	cout << aa;
 
