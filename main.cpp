@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "69. Sqrt(x).h"
+#include "29. Divide Two Integers.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.mySqrt(8);
+	auto aa = s.divide(-2147483648,2);
 
 	cout << aa;
 
