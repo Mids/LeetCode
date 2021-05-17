@@ -1,27 +1,26 @@
 #include <iostream>
 #include <vector>
-#include "380. Insert Delete GetRandom O(1).h"
+#include "202. Happy Number.h"
 
 using namespace std;
 
 int main() {
-	RandomizedSet s;
+	Solution s;
 
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {4, 10, 4, 3, 8, 9};
+	vector<int> nums = {1, 3, 5};
 	vector<int> nums1 = {3, 1, 5};
 
-	vector<vector<int>> board = {{1,  4,  7,  11, 15},
-								 {2,  5,  8,  12, 19},
-								 {3,  6,  9,  16, 22},
-								 {10, 13, 14, 17, 24},
-								 {18, 21, 23, 26, 30}};
+	vector<vector<int>> board = {{5,  1,  9,  11},
+								 {2,  0,  8,  10},
+								 {13, 3,  6,  7},
+								 {15, 14, 12, 16}};
 
-	vector<vector<int>> board2 = {{1, 2, 3, 4},
-								  {4, 5, 6, 7},
-								  {7, 8, 9, 10}};
+	vector<vector<int>> board2 = {{1, 2, 3},
+								  {4, 5, 6},
+								  {7, 8, 9}};
 
 	vector<vector<char>> grid = {{'A', 'B', 'C', 'E'},
 								 {'S', 'F', 'C', 'S'},
@@ -31,11 +30,9 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	RandomizedSet *obj = new RandomizedSet();
-	cout << obj->insert(3) << endl;
-	cout << obj->remove(3) << endl;
-	cout << obj->insert(3) << endl;
-	cout << obj->getRandom() << endl;
+	auto aa = s.isHappy(19);
+
+	cout << aa;
 
 	return 0;
 }
