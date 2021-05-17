@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "50. Pow(x, n).h"
+#include "69. Sqrt(x).h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.myPow(2.0, -2);
+	auto aa = s.mySqrt(8);
 
 	cout << aa;
 
