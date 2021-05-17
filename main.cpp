@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "202. Happy Number.h"
+#include "172. Factorial Trailing Zeroes.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.isHappy(19);
+	auto aa = s.trailingZeroes(1231);
 
 	cout << aa;
 
