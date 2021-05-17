@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "172. Factorial Trailing Zeroes.h"
+#include "171. Excel Sheet Column Number.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.trailingZeroes(1231);
+	auto aa = s.titleToNumber("FXSHRXW");
 
 	cout << aa;
 
