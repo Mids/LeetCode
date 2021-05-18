@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "29. Divide Two Integers.h"
+#include "166. Fraction to Recurring Decimal.h"
 
 using namespace std;
 
@@ -30,9 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.divide(-2147483648,2);
-
-	cout << aa;
+	cout << s.fractionToDecimal(-22,-2) << endl;
 
 	return 0;
 }
