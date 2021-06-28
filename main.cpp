@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "371. Sum of Two Integers.h"
+#include "41. First Missing Positive.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1, 3, 5};
+	vector<int> nums = {1, 2, 0};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{5,  1,  9,  11},
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	cout << s.getSum(2, 3) << endl;
+	cout << s.firstMissingPositive(nums) << endl;
 
 	return 0;
 }
