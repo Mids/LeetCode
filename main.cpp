@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "166. Fraction to Recurring Decimal.h"
+#include "371. Sum of Two Integers.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	cout << s.fractionToDecimal(-22,-2) << endl;
+	cout << s.getSum(2, 3) << endl;
 
 	return 0;
 }
