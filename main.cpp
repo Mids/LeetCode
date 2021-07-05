@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "287. Find the Duplicate Number.h"
+#include "227. Basic Calculator II.h"
 
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	cout << s.findDuplicate(nums);
+	cout << s.calculate(" 3 *  3 * 2 ");
 
 	return 0;
 }
