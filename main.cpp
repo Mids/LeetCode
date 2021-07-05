@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "289. Game of Life.h"
+#include "128. Longest Consecutive Sequence.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1, 2, 0};
+	vector<int> nums = {9,1,4,7,3,-1,0,5,8,-1,6};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{0, 1, 0},
@@ -30,22 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	for (auto a : board) {
-		for (auto n : a) {
-			cout << n << ' ';
-		}
-		cout << '\n';
-	}
-	cout << '\n';
-
-	s.gameOfLife(board);
-
-	for (auto a : board) {
-		for (auto n : a) {
-			cout << n << ' ';
-		}
-		cout << '\n';
-	}
+	cout << s.longestConsecutive(nums);
 
 	return 0;
 }
