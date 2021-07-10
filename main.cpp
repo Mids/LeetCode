@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "239. Sliding Window Maximum.h"
+#include "76. Minimum Window Substring.h"
 
 using namespace std;
 
@@ -30,11 +30,7 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	auto aa = s.maxSlidingWindow(nums, 3);
-
-	for (auto a : aa) {
-		cout << a << " ";
-	}
+	cout<< s.minWindow("ADOBECODEBANC", "ABC");
 
 	return 0;
 }
