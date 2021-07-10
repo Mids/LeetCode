@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "227. Basic Calculator II.h"
+#include "239. Sliding Window Maximum.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1,2,2};
+	vector<int> nums = {1,3,-1,-3,5,3,6,7};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{0, 1, 0},
@@ -30,7 +30,11 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	cout << s.calculate(" 3 *  3 * 2 ");
+	auto aa = s.maxSlidingWindow(nums, 3);
+
+	for (auto a : aa) {
+		cout << a << " ";
+	}
 
 	return 0;
 }
