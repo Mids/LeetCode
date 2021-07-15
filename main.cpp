@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "148. Sort List.h"
+#include "138. Copy List with Random Pointer.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"flower", "flow", "flight"};
 	vector<string> arr2 = {"ab", "a", "ba", "b"};
 
-	vector<int> nums = {1,8,6,2,5,4,8,3,7};
+	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{0, 1, 0},
@@ -30,18 +30,17 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	ListNode* h = new ListNode(6);
-	ListNode* g = new ListNode(2, h);
+	Node e(1, nullptr);
+	Node d(10, &e);
+	Node c(11, &d, &e);
+	Node b(13, &c);
+	Node a(7, &b, &e);
+	b.random = &a;
+	d.random = &c;
+	e.random = &a;
 
-	ListNode* f = new ListNode(-1);
-	ListNode* e = new ListNode(-2, f);
 
-	ListNode* d = new ListNode(3);
-	ListNode* c = new ListNode(1, d);
-	ListNode* b = new ListNode(2, c);
-	ListNode* a = new ListNode(4, b);
-
-	auto r = s.sortList(a);
+	auto r = s.copyRandomList(&a);
 
 	while (r) {
 		cout << r->val << ' ';
