@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "23. Merge k Sorted Lists.h"
+#include "148. Sort List.h"
 
 using namespace std;
 
@@ -35,17 +35,13 @@ int main() {
 
 	ListNode* f = new ListNode(-1);
 	ListNode* e = new ListNode(-2, f);
-	ListNode* d = new ListNode(-2, e);
 
-	ListNode* c = new ListNode(-1);
-	ListNode* b = new ListNode(-1, c);
-	ListNode* a = new ListNode(-1, b);
+	ListNode* d = new ListNode(3);
+	ListNode* c = new ListNode(1, d);
+	ListNode* b = new ListNode(2, c);
+	ListNode* a = new ListNode(4, b);
 
-	vector<ListNode*> v;
-	v.push_back(a);
-	v.push_back(d);
-//	v.push_back(g);
-	auto r = s.mergeKLists(v);
+	auto r = s.sortList(a);
 
 	while (r) {
 		cout << r->val << ' ';
