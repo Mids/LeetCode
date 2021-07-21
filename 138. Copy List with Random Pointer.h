@@ -34,6 +34,45 @@ class Solution {
 public:
 	Node *copyRandomList(Node *head) {
 		if (head == nullptr) return head;
+
+		Node *cur = head;
+		while (cur) {
+			Node *newNode = new Node(cur->val, cur->next, cur->random);
+			cur->next = newNode;
+			cur = cur->next->next;
+		}
+
+		cur = head->next;
+		while (cur) {
+			if (cur->random)
+				cur->random = cur->random->next;
+
+			if (cur->next)
+				cur = cur->next->next;
+			else
+				break;
+		}
+
+		cur = head;
+		Node *newHead = cur->next;
+		while (cur) {
+			Node *newNode = cur->next;
+			cur->next = newNode->next;
+			if(cur->next)
+				newNode->next = cur->next->next;
+
+			cur = cur->next;
+		}
+
+		return newHead;
+	}
+};
+
+// using more space
+class Solution1 {
+public:
+	Node *copyRandomList(Node *head) {
+		if (head == nullptr) return head;
 		vector<Node *> v;
 		unordered_map < Node * , int > map;
 
