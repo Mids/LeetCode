@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "138. Copy List with Random Pointer.h"
+#include "127. Word Ladder.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<string> arr = {"flower", "flow", "flight"};
-	vector<string> arr2 = {"ab", "a", "ba", "b"};
+	vector<string> arr = {"si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"};
+	vector<string> arr2 = {"hot","dot","dog","lot","log","cog"};
 
 	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
 	vector<int> nums1 = {3, 1, 5};
@@ -30,22 +30,8 @@ int main() {
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
-	Node e(1, nullptr);
-	Node d(10, &e);
-	Node c(11, &d, &e);
-	Node b(13, &c);
-	Node a(7, &b, &e);
-	b.random = &a;
-	d.random = &c;
-	e.random = &a;
 
-
-	auto r = s.copyRandomList(&a);
-
-	while (r) {
-		cout << r->val << ' ';
-		r = r->next;
-	}
+	cout << s.ladderLength("hit", "cog", arr2);
 
 	return 0;
 }
