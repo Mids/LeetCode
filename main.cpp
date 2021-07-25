@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "127. Word Ladder.h"
+#include "130. Surrounded Regions.h"
 
 using namespace std;
 
@@ -22,16 +22,33 @@ int main() {
 								  {4, 5, 6},
 								  {7, 8, 9}};
 
-	vector<vector<char>> grid = {{'A', 'B', 'C', 'E'},
-								 {'S', 'F', 'C', 'S'},
-								 {'A', 'D', 'E', 'E'}};
+	vector<vector<char>> grid = {{'X', 'X', 'X', 'X'},
+								 {'X', 'O', 'O', 'X'},
+								 {'X', 'X', 'O', 'X'},
+								 {'X', 'O', 'X', 'X'}};
 	vector<vector<char>> grid2 = {{'1', '1', '0', '0', '0'},
 								  {'1', '1', '0', '0', '0'},
 								  {'0', '0', '1', '0', '0'},
 								  {'0', '0', '0', '1', '1'}};
 
 
-	cout << s.ladderLength("hit", "cog", arr2);
+	for (auto a : grid) {
+		for (auto aa : a) {
+			cout << aa << ' ';
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	s.solve(grid);
+
+	for (auto a : grid) {
+		for (auto aa : a) {
+			cout << aa << ' ';
+		}
+		cout << endl;
+	}
+
 
 	return 0;
 }
