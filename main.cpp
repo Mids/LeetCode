@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "236. Lowest Common Ancestor of a Binary Tree.h"
+#include "124. Binary Tree Maximum Path Sum.h"
 
 using namespace std;
 
@@ -45,9 +45,9 @@ int main() {
 
 	TreeNode n3(3, &n5, &n1);
 
-	auto r = s.lowestCommonAncestor(&n3, &n5, &n4);
+	auto r = s.maxPathSum(&n3);
 
-	cout << r->val;
+	cout << r;
 
 
 	return 0;
