@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "124. Binary Tree Maximum Path Sum.h"
+#include "547. Number of Provinces.h"
 
 using namespace std;
 
@@ -13,10 +13,9 @@ int main() {
 	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
 	vector<int> nums1 = {3, 1, 5};
 
-	vector<vector<int>> board = {{0, 1, 0},
-								 {0, 0, 1},
-								 {1, 1, 1},
-								 {0, 0, 0}};
+	vector<vector<int>> board = {{1, 1, 0},
+								 {1, 1, 0},
+								 {0, 0, 1}};
 
 	vector<vector<int>> board2 = {{1, 2, 3},
 								  {4, 5, 6},
@@ -32,20 +31,7 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	TreeNode n6(6);
-	TreeNode n0(0);
-	TreeNode n8(8);
-	TreeNode n7(7);
-	TreeNode n4(4);
-
-	TreeNode n2(2, &n7, &n4);
-
-	TreeNode n5(5, &n6, &n2);
-	TreeNode n1(1, &n0, &n8);
-
-	TreeNode n3(3, &n5, &n1);
-
-	auto r = s.maxPathSum(&n3);
+	auto r = s.findCircleNum(board);
 
 	cout << r;
 
