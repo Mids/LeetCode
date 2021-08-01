@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "210. Course Schedule II.h"
+#include "329. Longest Increasing Path in a Matrix.h"
 
 using namespace std;
 
@@ -16,9 +16,9 @@ int main() {
 	vector<vector<int>> board = {{2, 1},
 								 {2, 0}};
 
-	vector<vector<int>> board2 = {{1, 2, 3},
-								  {4, 5, 6},
-								  {7, 8, 9}};
+	vector<vector<int>> board2 = {{9, 9, 4},
+								  {6, 6, 8},
+								  {2, 1, 1}};
 
 	vector<vector<char>> grid = {{'X', 'X', 'X', 'X'},
 								 {'X', 'O', 'O', 'X'},
@@ -30,10 +30,9 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto r = s.findOrder(3,board);
+	auto r = s.longestIncreasingPath(board2);
 
-	for (auto a : r)
-		cout << a << " ";
+	cout << r;
 
 
 	return 0;
