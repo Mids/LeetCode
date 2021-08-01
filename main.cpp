@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "207. Course Schedule.h"
+#include "210. Course Schedule II.h"
 
 using namespace std;
 
@@ -13,8 +13,8 @@ int main() {
 	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
 	vector<int> nums1 = {3, 1, 5};
 
-	vector<vector<int>> board = {{1, 0},
-								 {0, 1}};
+	vector<vector<int>> board = {{2, 1},
+								 {2, 0}};
 
 	vector<vector<int>> board2 = {{1, 2, 3},
 								  {4, 5, 6},
@@ -30,9 +30,10 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto r = s.canFinish(2,board);
+	auto r = s.findOrder(3,board);
 
-	cout << r;
+	for (auto a : r)
+		cout << a << " ";
 
 
 	return 0;
