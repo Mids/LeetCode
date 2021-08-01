@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "329. Longest Increasing Path in a Matrix.h"
+#include "315. Count of Smaller Numbers After Self.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"si", "go", "se", "cm", "so", "ph", "mt", "db", "mb", "sb", "kr", "ln", "tm", "le", "av", "sm", "ar", "ci", "ca", "br", "ti", "ba", "to", "ra", "fa", "yo", "ow", "sn", "ya", "cr", "po", "fe", "ho", "ma", "re", "or", "rn", "au", "ur", "rh", "sr", "tc", "lt", "lo", "as", "fr", "nb", "yb", "if", "pb", "ge", "th", "pm", "rb", "sh", "co", "ga", "li", "ha", "hz", "no", "bi", "di", "hi", "qa", "pi", "os", "uh", "wm", "an", "me", "mo", "na", "la", "st", "er", "sc", "ne", "mn", "mi", "am", "ex", "pt", "io", "be", "fm", "ta", "tb", "ni", "mr", "pa", "he", "lr", "sq", "ye"};
 	vector<string> arr2 = {"hot", "dot", "dog", "lot", "log", "cog"};
 
-	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+	vector<int> nums = {6,1,5,2,6,1};
 	vector<int> nums1 = {3, 1, 5};
 
 	vector<vector<int>> board = {{2, 1},
@@ -30,9 +30,11 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto r = s.longestIncreasingPath(board2);
+	auto r = s.countSmaller(nums);
 
-	cout << r;
+	for (auto aa: r) {
+		cout << aa << " ";
+	}
 
 
 	return 0;
