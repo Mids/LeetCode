@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "207. Course Schedule.h"
+#include "131. Palindrome Partitioning.h"
 
 using namespace std;
 
@@ -30,9 +30,15 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto r = s.canFinish(2,board);
+	auto r = s.partition("aab");
 
-	cout << r;
+	for (auto a : r) {
+		for (auto b : a) {
+			cout << b << ' ';
+		}
+
+		cout << endl;
+	}
 
 
 	return 0;
