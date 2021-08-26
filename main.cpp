@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "378. Kth Smallest Element in a Sorted Matrix.h"
+#include "4. Median of Two Sorted Arrays.h"
 
 using namespace std;
 
@@ -10,8 +10,8 @@ int main() {
 	vector<string> arr = {"oath", "pea", "eat", "rain", "thfi"};
 	vector<string> arr2 = {"hot", "dot", "dog", "lot", "log", "cog"};
 
-	vector<int> nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-	vector<int> nums1 = {3, 1, 5};
+	vector<int> nums = {2,2};
+	vector<int> nums1 = {2, 2,2};
 
 	vector<vector<int>> board = {{1,3,5},
 								 {6,7,12},
@@ -31,7 +31,7 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	cout << s.kthSmallest(board, 3);
+	cout << s.findMedianSortedArrays(nums, nums1);
 
 
 	return 0;
