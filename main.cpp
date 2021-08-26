@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "212. Word Search II.h"
+#include "324. Wiggle Sort II.h"
 
 using namespace std;
 
@@ -30,9 +30,9 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto r = s.findWords(grid, arr);
+	s.wiggleSort(nums);
 
-	for (auto &a : r) {
+	for (auto &a : nums) {
 			cout << a << ' ';
 	}
 
