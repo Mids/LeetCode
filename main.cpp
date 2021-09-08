@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "4. Median of Two Sorted Arrays.h"
+#include "140. Word Break II.h"
 
 using namespace std;
 
 int main() {
 	Solution s;
 
-	vector<string> arr = {"oath", "pea", "eat", "rain", "thfi"};
+	vector<string> arr = {"cat", "cats", "and", "sand", "dog"};
 	vector<string> arr2 = {"hot", "dot", "dog", "lot", "log", "cog"};
 
 	vector<int> nums = {2,2};
@@ -31,7 +31,11 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	cout << s.findMedianSortedArrays(nums, nums1);
+	auto a = s.wordBreak("catsanddog", arr);
+
+	for (auto b : a) {
+		cout << b << endl;
+	}
 
 
 	return 0;
