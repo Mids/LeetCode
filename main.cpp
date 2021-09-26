@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "140. Word Break II.h"
+#include "84. Largest Rectangle in Histogram.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	vector<string> arr = {"cat", "cats", "and", "sand", "dog"};
 	vector<string> arr2 = {"hot", "dot", "dog", "lot", "log", "cog"};
 
-	vector<int> nums = {2,2};
+	vector<int> nums = {2,1,5,6,2,3};
 	vector<int> nums1 = {2, 2,2};
 
 	vector<vector<int>> board = {{1,3,5},
@@ -31,11 +31,10 @@ int main() {
 								  {'0', '0', '0', '1', '1'}};
 
 
-	auto a = s.wordBreak("catsanddog", arr);
+	auto a = s.largestRectangleArea(nums);
 
-	for (auto b : a) {
-		cout << b << endl;
-	}
+		cout << a << endl;
+
 
 
 	return 0;
